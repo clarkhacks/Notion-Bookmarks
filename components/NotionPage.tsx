@@ -2,6 +2,7 @@ import * as React from 'react'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import Image from 'next/image'
+import cs from 'classnames'
 import Link from 'next/link'
 import { HiddenHeader } from '../lib/config'
 import { useRouter } from 'next/router'
@@ -142,8 +143,10 @@ export const NotionPage = ({
         <meta name='twitter:creator' content='@TheWeckmann' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-
       <NotionRenderer
+      bodyClassName={cs(
+        'index-page'
+      )}
         recordMap={recordMap}
         fullPage={true}
         darkMode={false}

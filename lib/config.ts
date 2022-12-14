@@ -3,7 +3,7 @@
 // use it.
 export const rootNotionPageId = process.env.NOTION_PAGE
 export const rootNotionSpaceId = process.env.NOTION_SPACE_ID
-export const HiddenHeader = true
+export const HiddenHeader = false
 
 // NOTE: having this enabled can be pretty expensive as it re-generates preview
 // images each time a page is built. In a production setting, we recommend that
