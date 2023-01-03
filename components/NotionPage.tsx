@@ -112,7 +112,7 @@ export const NotionPage = ({
     g.block = block
   }
 
-  const socialDescription = 'Notes on Clark.Today.'
+  const socialDescription = 'Let’s Make Indonesia as World #1 Remote Worker Provider'
   const socialImage =
     '/social.jpg'
 
