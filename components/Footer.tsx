@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styles from './styles.module.css'
-import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import { useDarkMode } from '../lib/use-dark-mode'
@@ -25,7 +24,7 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2022 Clark Weckmann</div>
+      <div className={styles.copyright}>Copyright 2023 RWID</div>
 
       <div className={styles.social}>
       {hasMounted && (
@@ -39,15 +38,6 @@ export const FooterImpl: React.FC = () => {
             {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
           </a>
         )}
-          <a
-            className={styles.twitter}
-            href={`https://twitter.com/TheWeckmann`}
-            title={`Twitter @TheWeckmann`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaTwitter />
-          </a>
       </div>
     </footer>
   )
